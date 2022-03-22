@@ -5,10 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GitHubUserList"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <TextBox Name="tempData">
-           
-        </TextBox>
+        Title="MainWindow" Height="450" Width="700">
+    <Grid  ShowGridLines="True">
+
+        <TextBlock Margin="10,0,515,390" FontSize="20">顯示數(max:100):</TextBlock>
+        <TextBox Name="perPage" Margin="182,0,350,390" FontSize="20">30</TextBox>
+        <TextBlock Margin="342,1,183,389" FontSize="20" RenderTransformOrigin="2.503,0.931">查找起始值:</TextBlock>
+        <TextBox Name="since" Margin="472,1,60,389" FontSize="20">0</TextBox>
+        <Button Margin="260,30,260,355" FontSize="20" Click="SelectButton_Click">查詢</Button>
+        <Grid Name="mainGrid" Margin="0,76,0,0"></Grid>
     </Grid>
 </Window>
